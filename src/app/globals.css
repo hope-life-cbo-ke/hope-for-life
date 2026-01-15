@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hope for Life CBO - Warm, Minimal, Artistic Design System */
+
+@layer base {
+  :root {
+    /* Core Colors - Warm Amber Theme */
+    --background: 45 30% 98%;
+    --foreground: 30 10% 15%;
+
+    --card: 45 40% 97%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 45 30% 98%;
+    --popover-foreground: 30 10% 15%;
+
+    /* Primary - Brand Amber #F59E0B */
+    --primary: 38 92% 50%;
+    --primary-foreground: 45 30% 98%;
+
+    /* Secondary - Warm Cream */
+    --secondary: 40 40% 94%;
+    --secondary-foreground: 30 10% 25%;
+
+    /* Muted - Soft Warmth */
+    --muted: 40 20% 92%;
+    --muted-foreground: 30 10% 45%;
+
+    /* Accent - Deep Amber */
+    --accent: 30 80% 45%;
+    --accent-foreground: 45 30% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 38 92% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --text-hero: 30 15% 20%;
+    --surface-warm: 40 35% 96%;
+    --glow-primary: 38 92% 50%;
+
+    /* Sidebar */
+    --sidebar-background: 45 30% 97%;
+    --sidebar-foreground: 30 10% 25%;
+    --sidebar-primary: 38 92% 50%;
+    --sidebar-primary-foreground: 45 30% 98%;
+    --sidebar-accent: 40 30% 92%;
+    --sidebar-accent-foreground: 30 10% 25%;
+    --sidebar-border: 35 20% 88%;
+    --sidebar-ring: 38 92% 50%;
+  }
+
+  .dark {
+    --background: 30 15% 8%;
+    --foreground: 40 25% 95%;
+
+    --card: 30 15% 10%;
+    --card-foreground: 40 25% 95%;
+
+    --popover: 30 15% 10%;
+    --popover-foreground: 40 25% 95%;
+
+    --primary: 38 92% 50%;
+    --primary-foreground: 30 15% 8%;
+
+    --secondary: 30 20% 15%;
+    --secondary-foreground: 40 25% 90%;
+
+    --muted: 30 15% 18%;
+    --muted-foreground: 40 15% 60%;
+
+    --accent: 35 70% 55%;
+    --accent-foreground: 30 15% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 15% 18%;
+    --input: 30 15% 18%;
+    --ring: 38 92% 50%;
+
+    --text-hero: 40 25% 95%;
+    --surface-warm: 30 15% 12%;
+    --glow-primary: 38 92% 50%;
+
+    --sidebar-background: 30 15% 10%;
+    --sidebar-foreground: 40 25% 90%;
+    --sidebar-primary: 38 92% 50%;
+    --sidebar-primary-foreground: 30 15% 8%;
+    --sidebar-accent: 30 15% 15%;
+    --sidebar-accent-foreground: 40 25% 90%;
+    --sidebar-border: 30 15% 18%;
+    --sidebar-ring: 38 92% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-sans {
+    font-family: 'Inter', sans-serif;
+  }
+}
